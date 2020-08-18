@@ -53,7 +53,7 @@ export default function App() {
   useEffect(() => {
     fakeAxiosGet('fakeapi.com').then(res => setFriends(res.data))
   }, [])
-
+  debugger
   return (
     <div className='container'>
       <header><h1>Friends App</h1></header>
@@ -67,7 +67,6 @@ export default function App() {
 
       {
         friends.map(friend => {
-          debugger
           return (
             <Friend key={friend.id} details={friend} />
           )
