@@ -37,7 +37,7 @@ export default function App() {
   // 🔥 STEP 1 - WE NEED STATE TO HOLD ALL VALUES OF THE FORM!
   const [formValues, setFormValues] = useState(initialFormValues) // fix this using the state hook
 
-  const updateForm = (inputName, inputValue) => {
+  const updateForm = (inputName, inputValue) => { // role 'instructor'
     // 🔥 STEP 2 - IMPLEMENT a "form state updater" which will be used inside the inputs' `onChange` handler
     //  It takes in the name of an input and its value, and updates `formValues`
   }
