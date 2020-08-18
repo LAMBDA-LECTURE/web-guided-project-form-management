@@ -41,7 +41,7 @@ export default function App() {
     // 🔥 STEP 2 - IMPLEMENT a "form state updater" which will be used inside the inputs' `onChange` handler
     //  It takes in the name of an input and its value, and updates `formValues`
 
-    setFormValues({  })
+    setFormValues({ ...formValues, role: 'instructor' })
   }
 
   const submitForm = () => {
