@@ -63,6 +63,7 @@ export default function App() {
         debugger
       })
     //  d) also on success clear the form
+    setFormValues(initialFormValues)
   }
 
   useEffect(() => {
