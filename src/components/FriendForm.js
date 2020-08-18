@@ -64,9 +64,9 @@ export default function FriendForm(props) {
           {/* 🔥 STEP 9 - Make dropdown for role. Dropdowns look very different
             but they can often use the same change handler text inputs use */}
           <select onChange={onChange} value={values.role} name="role">
-            <option value="">-- Select a Role</option>
+            <option value="">-- Select a Role --</option>
             <option value="student">Student</option>
-            <option value="team_lead">Team Lead</option>
+            <option value="tl">Team Lead</option>
             <option value="alumni">Alumni</option>
           </select>
         </label>
