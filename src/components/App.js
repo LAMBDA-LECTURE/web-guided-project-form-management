@@ -58,8 +58,8 @@ export default function App() {
     fakeAxiosPost('fake.com', friend)
       .then(res => {
         // and on success update the list of friends in state with the new friend from API
-        const newFriendFromAPI = 
-        setFriends([...friends, res.data])
+        const newFriendFromAPI = res.data
+        setFriends([...friends, newFriendFromAPI])
       })
       .catch(err => {
         debugger
