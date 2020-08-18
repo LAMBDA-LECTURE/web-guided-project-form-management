@@ -64,9 +64,10 @@ export default function App() {
       })
     //  d) also on success clear the form
   }
-fakeAxiosPost()
+
   useEffect(() => {
     fakeAxiosGet('fakeapi.com').then(res => setFriends(res.data))
+    submitForm()
   }, [])
 
   return (
