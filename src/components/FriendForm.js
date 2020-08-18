@@ -37,7 +37,7 @@ export default function FriendForm(props) {
             At each keystroke, a change handler fires to change app state. */}
           <input
             value={values.username}
-            onChange={}
+            onChange={onChange}
             name='username'
             placeholder='type username'
             maxLength='20'
