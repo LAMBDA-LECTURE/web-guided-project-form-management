@@ -36,7 +36,7 @@ export default function FriendForm(props) {
             Inputs render what they're told - their current value comes from app state.
             At each keystroke, a change handler fires to change app state. */}
           <input
-            value={values.username}
+            // value={values.username}
             onChange={onChange}
             name='username'
             placeholder='type username'
@@ -48,7 +48,7 @@ export default function FriendForm(props) {
         <label>Email:&nbsp;
           {/* 🔥 STEP 8 - Make an input of type `email` or `text` for email. */}
           <input
-            value={values.email}
+            // value={values.email}
             onChange={onChange}
             name='email'
             placeholder='type email'
