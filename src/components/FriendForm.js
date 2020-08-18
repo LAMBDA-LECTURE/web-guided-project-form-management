@@ -26,7 +26,7 @@ export default function FriendForm(props) {
       <div className='form-group submit'>
         <h2>Add a Friend</h2>
         {/* disabled true if any form value trimmed is empty string */}
-        <button disabled={!values.username && !values.email && !values.role ? false : true}>submit</button>
+        <button disabled={!values.username || !values.email || !values.role ? true : false}>submit</button>
       </div>
 
       <div className='form-group inputs'>
