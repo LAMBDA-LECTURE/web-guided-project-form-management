@@ -32,7 +32,7 @@ const fakeAxiosPost = (url, { username, email, role }) => {
 }
 
 export default function App() {
-  const [friends, setFriends] = useState([]) // careful what you initialize your state to
+  const [friends, setFriends] = useState() // careful what you initialize your state to
 
   // 🔥 STEP 1 - WE NEED STATE TO HOLD ALL VALUES OF THE FORM!
   const formValues = {} // fix this using the state hook
@@ -53,7 +53,7 @@ export default function App() {
   useEffect(() => {
     fakeAxiosGet('fakeapi.com').then(res => setFriends(res.data))
   }, [])
-  debugger
+
   return (
     <div className='container'>
       <header><h1>Friends App</h1></header>
