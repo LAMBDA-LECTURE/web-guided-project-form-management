@@ -53,6 +53,7 @@ export default function App() {
       role: formValues.role,
     }
     //  b) prevent further action if either username or email or role is empty string after trimming
+    if (!friend.username || !friend.email ) return
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
     //  d) also on success clear the form
   }
