@@ -67,6 +67,7 @@ export default function App() {
 
       {
         friends.map(friend => {
+          debugger
           return (
             <Friend key={friend.id} details={friend} />
           )
