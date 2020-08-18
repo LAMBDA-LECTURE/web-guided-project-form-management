@@ -65,7 +65,6 @@ export default function App() {
         debugger
       })
       .finally(() => {
-        //  d) also on success clear the form
         setFormValues(initialFormValues)
       })
   }
