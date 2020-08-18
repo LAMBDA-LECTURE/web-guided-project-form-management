@@ -53,7 +53,7 @@ export default function App() {
       role: formValues.role,
     }
     //  b) prevent further action if either username or email or role is empty string after trimming
-    // if (!friend.username || !friend.email) return
+    if (!friend.username || !friend.email) return
     //  c) POST new friend to backend
     fakeAxiosPost('fake.com', friend)
       .then(res => {
