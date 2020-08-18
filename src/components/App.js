@@ -83,7 +83,7 @@ export default function App() {
         //  to see what props it expects.
         values={formValues}
         update={updateForm}
-        submit={}
+        submit={submitForm}
       />
 
       {
