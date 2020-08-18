@@ -36,6 +36,8 @@ export default function FriendForm(props) {
             Inputs render what they're told - their current value comes from app state.
             At each keystroke, a change handler fires to change app state. */}
           <input
+            value={values.username}
+            onChange={}
             name='username'
             placeholder='type username'
             maxLength='20'
