@@ -56,6 +56,9 @@ export default function App() {
     if (!friend.username || !friend.email ) return
     //  c) POST new friend to backend, and on success update the list of friends in state with the new friend from API
     fakeAxiosPost('fake.com', friend)
+      .then(res => {
+          debugger
+      })
     //  d) also on success clear the form
   }
 
