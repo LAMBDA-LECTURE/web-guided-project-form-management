@@ -25,7 +25,7 @@ export default function FriendForm(props) {
     <form className='form container' onSubmit={onSubmit}>
       <div className='form-group submit'>
         <h2>Add a Friend</h2>
-        
+        {/* disabled true if any form value trimmed is empty string */}
         <button disabled={}>submit</button>
       </div>
 
